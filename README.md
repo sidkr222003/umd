@@ -13,7 +13,7 @@ UMD is a Python CLI tooling project focused on reliable, compliance-aware media 
 ## Project Snapshot
 
 - 60+ stars
-- 20+ forks
+- 19+ forks
 - Original repository encountered automated moderation flags due to category classification.
 - Project now maintained at https://codeberg.org/nk2552003/umd
 
