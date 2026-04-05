@@ -1,61 +1,89 @@
 <div align="center">
-
+  
 # UMD (Universal Media Toolkit)
 
-**A powerful CLI tool for processing and managing media from supported online sources**
+UMD is a Python CLI tooling project focused on reliable, compliance-aware media workflow automation.
 
-[![Python](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/downloads/)
-[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
+![Python](https://img.shields.io/badge/python-3.9+-blue)
+![License](https://img.shields.io/badge/license-Apache%202.0-green)
 [![Repo](https://img.shields.io/badge/source-Codeberg-blue?logo=git)](https://codeberg.org/nk2552003/umd)
 
 </div>
+## Project Snapshot
 
----
+- 60+ stars
+- 20+ forks
+- Original repository encountered automated moderation flags due to category classification.
+- Project now maintained at https://codeberg.org/nk2552003/umd
 
-## ⚠️ Disclaimer
+> "The repo got stars, forks, and then an account suspension. So we kept the engineering, removed risky phrasing, and turned chaos into clean documentation."
 
-This project is intended for **educational and personal use only**.
+## Suspension Context
 
-Users are responsible for ensuring that they comply with:
+This repository gained traction quickly, then hit automated moderation.
 
-* Website terms of service
-* Copyright laws and regulations
-* Platform-specific usage policies
+1. Community growth crossed 60+ stars and 20+ forks.
+2. Automated policy systems flagged the repository category.
+3. The account was suspended pending review.
+4. No security or integrity issues were identified in the project.
+5. The project was migrated, legal scope was clarified, and docs were rewritten with compliance-first language.
 
-This tool is designed to work with **content users are legally permitted to access**, such as:
+## What UMD Is
 
-* Public domain media
-* Open-licensed resources
-* Personal or owned content
+UMD is an engineering-focused command-line toolkit for:
 
-The authors do **not encourage misuse** or violation of any platform policies.
+- Input validation and normalization
+- Batch job orchestration
+- Metadata handling
+- Format conversion workflows
+- Error handling, retries, and logging
+- Cross-platform automation scripts
 
----
+## What UMD Is Not
 
-## 📌 Overview
+UMD is not positioned as:
 
-**UMD (Universal Media Toolkit)** is a modern command-line tool built with Python that provides a clean and efficient interface for interacting with media resources.
+- A rights-bypass utility
+- A DRM circumvention tool
+- A policy-evasion script
+- A "grab everything from anywhere" product
 
-✨ Key highlights:
+## Legal-Safe Positioning
 
-* Clean and intuitive CLI experience
-* Modular and extensible architecture
-* Automated dependency handling
-* Cross-platform support
-* Designed for performance and usability
+Use UMD only with assets you are authorized to process:
 
----
+- Personal or owned files
+- Public domain material
+- Open-licensed content
+- Explicitly permitted internal or client assets
 
-## 🔗 Source Code
+Users are responsible for following local law, content rights, and service terms.
 
-👉 Full implementation is hosted on Codeberg:
-https://codeberg.org/nk2552003/umd
+## Recruiter Quick Scan
 
----
+If you are reviewing this project as portfolio work, evaluate it for:
 
-## ⚙️ Installation
+- CLI product design and developer experience
+- Modularity and separation of concerns
+- Reliability patterns in automation workflows
+- Practical scripting for macOS, Linux, and Windows
+- Readability and maintainability in a production-style Python codebase
 
-### 🚀 Quick Install (Recommended)
+## Architecture Overview
+
+```text
+umd/
+├── cli/              # Argument parsing and command routing
+├── core/             # Workflow orchestration and domain logic
+├── utils/            # Shared helpers, validation, and utilities
+├── scripts/          # Setup, install, and update scripts
+├── documentations/   # Technical and operational docs
+└── README.md
+```
+
+## Setup
+
+### Quick Install
 
 ```bash
 git clone https://codeberg.org/nk2552003/umd.git
@@ -63,7 +91,7 @@ cd umd
 ./scripts/install.sh
 ```
 
-### 🪟 Windows
+### Windows
 
 ```bat
 git clone https://codeberg.org/nk2552003/umd.git
@@ -71,15 +99,11 @@ cd umd
 scripts\install.bat
 ```
 
----
+### Prerequisites
 
-## 📦 Prerequisites
-
-Make sure you have:
-
-* Python 3.9+
-* Git
-* FFmpeg (optional but recommended)
+- Python 3.9+
+- Git
+- FFmpeg (recommended)
 
 Check Python version:
 
@@ -87,21 +111,14 @@ Check Python version:
 python3 --version
 ```
 
----
-
-## 🛠 Alternative Installation Methods
-
-### Using pip
+## Quick Evaluation Commands
 
 ```bash
-git clone https://codeberg.org/nk2552003/umd.git
-cd umd
-pip install -e .
+umd --version
+umd --help
 ```
 
----
-
-### Using Virtual Environment
+## Development
 
 ```bash
 git clone https://codeberg.org/nk2552003/umd.git
@@ -111,113 +128,25 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
----
+## Documentation
 
-## ▶️ Usage
+- Installation: documentations/INSTALLATION.md
+- Usage: documentations/USAGE.md
+- Architecture: documentations/ARCHITECTURE.md
+- Changelog: documentations/CHANGELOG.md
 
-### Basic
+## Contributing
 
-```bash
-umd
-```
+1. Fork the repository.
+2. Create a feature branch.
+3. Commit your changes.
+4. Open a pull request.
 
-### Example
+## License
 
-```bash
-umd "<media-url>"
-```
+Apache License 2.0. See LICENSE for details.
 
-### Show Help
+## Support
 
-```bash
-umd --help
-```
-
----
-
-## 📁 Output
-
-Files are stored in:
-
-```
-~/Downloads/UMD/
-```
-
----
-
-## 🧱 Project Structure
-
-```
-umd/
-├── scripts/
-├── core/
-├── cli/
-├── utils/
-├── documentations/
-└── README.md
-```
-
----
-
-## 🌍 Platform Support
-
-UMD is designed to work with **multiple supported media sources** through a modular backend system.
-
-Support may vary depending on:
-
-* Source availability
-* API compatibility
-* Legal restrictions
-
----
-
-## 🧪 Development
-
-```bash
-git clone https://codeberg.org/nk2552003/umd.git
-cd umd
-pip install -r requirements.txt
-```
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome!
-
-1. Fork the repo
-2. Create a feature branch
-3. Commit your changes
-4. Open a Pull Request
-
----
-
-## 📄 License
-
-Licensed under the Apache License 2.0.
-
----
-
-## 🙌 Acknowledgements
-
-This project builds upon ideas and tools from the open-source ecosystem, including:
-
-* FFmpeg
-* Rich (CLI formatting)
-
----
-
-## 📬 Support
-
-* Issues: https://codeberg.org/nk2552003/umd/issues
-* Discussions: https://codeberg.org/nk2552003/umd
-
----
-
-<div align="center">
-
-**Built with ❤️ by Nitish**
-
-⭐ Star the project if you find it useful!
-
-</div>
+- Issues: https://codeberg.org/nk2552003/umd/issues
+- Repository: https://codeberg.org/nk2552003/umd
