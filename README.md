@@ -9,6 +9,7 @@ UMD is a Python CLI tooling project focused on reliable, compliance-aware media 
 [![Repo](https://img.shields.io/badge/source-Codeberg-blue?logo=git)](https://codeberg.org/nk2552003/umd)
 
 </div>
+
 ## Project Snapshot
 
 - 60+ stars
